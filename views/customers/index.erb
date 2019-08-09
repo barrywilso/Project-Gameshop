@@ -1,0 +1,7 @@
+<h3>Our Customers</h3>
+<hr />
+<% for customer in @customers %>
+  <p>Name: <%= customer.pretty_name() %> </p>
+  <p><a href="/customers<%= customer.id %>">Show Customer</a></p>
+  <hr />
+<% end %>
