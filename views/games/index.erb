@@ -1,0 +1,7 @@
+<h3>Games available</h3>
+<hr />
+<% for game in @games %>
+  <p>Name: <%= game.title %> </p>
+  <p><a href="/games/<%= game.id %>">Show Game</a></p>
+  <hr />
+<% end %>

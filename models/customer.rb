@@ -19,10 +19,9 @@ class Customer
     @id = result[0]['id'].to_i()
   end
 
-  def pretty_name()
+  def format_name()
     return "#{@first_name} #{@last_name}"
   end
-
 
   def self.all()
     sql = "SELECT * FROM customers"
@@ -53,7 +52,6 @@ class Customer
     values = [@id]
     SqlRunner.run(sql, values)
   end
-
 
 
 end
