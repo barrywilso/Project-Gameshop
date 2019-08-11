@@ -13,7 +13,9 @@ CREATE TABLE games(
   id SERIAL4 PRIMARY KEY,
   platform VARCHAR(255),
   title VARCHAR(255),
-  genre VARCHAR(255)
+  genre VARCHAR(255),
+  available BOOLEAN NOT NULL
+
 );
 
 CREATE TABLE rentals(

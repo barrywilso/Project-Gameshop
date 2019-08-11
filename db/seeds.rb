@@ -50,7 +50,8 @@ game1 = Game.new(
   {
     'platform' => 'PC',
     'title' => 'Half Life',
-    'genre' => 'FPS'
+    'genre' => 'FPS',
+    'available' => 'TRUE'
 
   }
 )
@@ -58,7 +59,8 @@ game2 = Game.new(
   {
     'platform' => 'Nintendo 64',
     'title' => 'Legend of Zelda',
-    'genre' => 'Adventure'
+    'genre' => 'Adventure',
+    'available' => 'TRUE'
 
   }
 )
@@ -66,7 +68,8 @@ game3 = Game.new(
   {
     'platform' => 'Xbox',
     'title' => 'Halo',
-    'genre' => 'FPS'
+    'genre' => 'FPS',
+    'available' => 'TRUE'
 
   }
 )
@@ -74,7 +77,8 @@ game4 = Game.new(
   {
     'platform' => 'Playstation 2',
     'title' => 'GTA III',
-    'genre' => 'FPS'
+    'genre' => 'FPS',
+    'available' => 'TRUE'
 
   }
 )
@@ -83,7 +87,8 @@ game5 = Game.new(
   {
     'platform' => 'PC',
     'title' => 'Witcher 3',
-    'genre' => 'RPG'
+    'genre' => 'RPG',
+    'available' => 'TRUE'
 
   }
 )
