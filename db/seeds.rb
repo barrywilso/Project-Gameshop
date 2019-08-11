@@ -1,10 +1,11 @@
 require_relative('../models/game.rb')
 require_relative('../models/customer.rb')
-require_relative('../models/rentals.rb')
+require_relative('../models/rental.rb')
 
 
 Game.delete_all()
 Customer.delete_all()
+Rental.delete_all()
 
 customer1 = Customer.new(
   {

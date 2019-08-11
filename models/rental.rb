@@ -1,6 +1,5 @@
 require_relative("../db/sql_runner")
 
-
 class Rental
 
   attr_reader :id
@@ -28,6 +27,13 @@ class Rental
   def self.delete_all()
     sql = "DELETE FROM rentals"
     SqlRunner.run(sql)
+  end
+
+  def self.find(id)
+    sql = "SELECT * FROM rentals WHERE id = $1"
+    values = [id]
+    rental = SqlRunner.run(sql, values).first()
+    return Rental.new(rental)
   end
 
   def update()

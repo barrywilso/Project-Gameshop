@@ -5,6 +5,7 @@ also_reload('./models/*')
 
 require_relative("./controllers/game_controller.rb")
 require_relative("./controllers/customer_controller.rb")
+require_relative("./controllers/rental_controller.rb")
 
 
 get '/' do

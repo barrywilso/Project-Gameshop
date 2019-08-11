@@ -1,0 +1,11 @@
+<form action="/rentals/<%=@rental.id%>" method="POST">
+
+  <label for="Customer Id">Customer Id:</label>
+  <input required type="number" id="Customer Id" name="customer_id" value = "<%=@rental.customer_id%>">
+
+  <label for="Game id">Game id:</label>
+  <input required type="number" id="Game_id" name="game_id" value = "<%=@rental.game_id%>">
+
+  <input type="submit" value="Edit Rental">
+
+</form>

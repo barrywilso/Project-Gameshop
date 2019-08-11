@@ -49,6 +49,4 @@ class Game
     SqlRunner.run(sql, values)
   end
 
-
-
 end

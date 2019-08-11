@@ -1,0 +1,7 @@
+<h3>Current Rentals</h3>
+<hr />
+<% for rental in @rentals %>
+  <p>Rental: <%= rental.id %> </p>
+  <p><a href="/rentals/<%= rental.id %>">Show rental</a></p>
+  <hr />
+<% end %>
